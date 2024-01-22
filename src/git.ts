@@ -60,7 +60,7 @@ export async function getCommitMessagesBetween(
     'git',
     [
       'log',                      // Prints the commit history
-      '--format=%s',              // Prints only the first line of the commit message (summary)
+      '--format=%s',
       `${firstTag}..${secondTag}` // Includes the commits reachable from 'secondTag' but not 'firstTag'
     ],
     options
