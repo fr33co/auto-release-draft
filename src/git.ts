@@ -59,9 +59,9 @@ export async function getCommitMessagesBetween(
   await exec(
     'git',
     [
-      'log',                      // Prints the commit history
+      'log',
       '--format=%s',
-      `${firstTag}..${secondTag}` // Includes the commits reachable from 'secondTag' but not 'firstTag'
+      `${firstTag}..${secondTag}`
     ],
     options
   )
